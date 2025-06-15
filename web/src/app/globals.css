@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Light theme variables */
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #171717;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #1f2937;
+  --accent: #f9fafb;
+  --accent-foreground: #111827;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --dp-from-background: #232325;
+  --dp-to-background: #8D8D8D;
+  --theme-button-background: #231f1f;
+  --theme-button-foreground: #e5a224;
+}
+
+.dark {
+  /* Dark theme variables */
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --border: #334155;
+  --input: #334155;
+  --theme-button-background: #e5a224;
+  --theme-button-foreground: #000000;
+}
+
+@theme inline{
+  /* Define custom colors using existing CSS variables */
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-dp-from-background: var(--dp-from-background);
+  --color-dp-to-background: var(--dp-to-background);
+  --color-theme-button-background: var(--theme-button-background);
+  --color-theme-button-foreground: var(--theme-button-foreground);
+}
+
+* {
+  transition: color 200ms, background-color 200ms;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
