@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { StoreContext } from '../components/providers/MobXProvider';
+import { StoreContext } from '../../components/providers/MobXProvider';
 import { RootStore } from './rootStore';
 
 export function useStore(): RootStore {
